@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*background-color: black;*/
+    padding-top: 10%;
+    background: -webkit-linear-gradient(left bottom,rgb(121,150,137),rgb(55,68,110));
+}
+
+.card-container{
+    width: 30%;
+    margin: 0 auto;
+    animation:  cardContainerLoad 2s;
+}
+
+@keyframes cardContainerLoad{
+    from{
+        opacity: 0;
+        transform: translate3d(0,10%,0);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.card-container .image-wrapper{
+    font-size: 0px;
+}
+
+.card-container .image-wrapper img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-container .title-wrapper{
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+}
+
+.card-container .title-wrapper .title{
+    text-align: center;
+    font-size: 1em;
+    padding: 5% 0 5% 0;
+}
+
+.card-container .title-wrapper .subtitle{
+    text-align: center;
+    font-size: 3%;
+    padding: 0 0 5% 0;
+    color: rgb(79,92,99);
+}
+
+.card-container .title-wrapper hr{
+    border:  0;
+    height: 1px;
+    background-color: rgb(179,192,199);
+    margin: 0 20%;
+}
+
+.card-container .title-wrapper .icon-btns{
+    padding: 5% 0 5% 0;
+}
+
+.card-container .title-wrapper .icon-btns ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.card-container .title-wrapper .icon-btns ul li{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5%x;
+    border-radius: 100%;
+    cursor: pointer;
+    border-color: rgb(79,92,99);
+    transition: -2s;
+}
+
+.card-container .title-wrapper .icon-btns ul li:hover{
+    border-color: rgb(179,192,199);
+}
+
+.card-container .title-wrapper .icon-btns ul li:hover i{
+    color: rgb(179,192,199);
+}
+
+.card-container .title-wrapper .icon-btns ul li i{
+    font-size: 100%;
+}
+
